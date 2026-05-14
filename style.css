@@ -63,6 +63,8 @@ section{
 
 }
 
+/*-------------------*/
+
 .communty{
     padding: 10px;
     margin: 10px;
@@ -86,27 +88,86 @@ section{
     padding: 5px;
 }
 
-.feated{
+/*-------------------*/
 
-
+.featured{
+    padding: 10px;
+    margin: 10px;
+    border: 0.5px solid rgb(163, 159, 159);
 }
+
+.featured h2{
+    text-align: left;
+}
+
+.course-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.course-container div{
+    border: 0.5px solid rgb(163, 159, 159);
+    background-color: rgb(247, 244, 244);
+    text-align: center;
+    margin: 5px;
+    padding: 25px;
+}
+
+/*-------------------*/
 
 .testimonials{
-
-
+    padding: 10px;
+    margin: 10px;
+    border: 0.5px solid rgb(163, 159, 159);
 }
+
+.testimonials h2{
+    text-align: left;
+}
+
+.testimonials-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.testimonials-container div{
+    border: 0.5px solid rgb(163, 159, 159);
+    background-color: rgb(247, 244, 244);
+    text-align: center;
+    margin: 5px;
+    padding: 25px;
+}
+
+/*-------------------*/
+
 
 .join{
-
-
-}
-
-.infos{
-
-
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    margin: 10px;
+    border: 0.5px solid rgb(163, 159, 159);
+    background-color: rgb(247, 244, 244);
+    text-align: center;
 }
 
 footer{
-
-
+    padding: 10px;
+    margin: 10px;
+    border: 0.5px solid rgb(163, 159, 159);
 }
+
+footer nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+footer nav a{
+    font-size: 19px;
+    text-decoration: none;
+    margin-right: 5px;
+    color: black;
+    border: 0.5px solid rgb(163, 159, 159);
+    padding: 2px;
+    text-align: center;
+}
+
