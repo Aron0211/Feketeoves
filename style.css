@@ -3,7 +3,7 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Outfit', sans-serif;
     margin: auto;
     padding: auto;
 }
@@ -11,7 +11,15 @@ body{
 header{
     padding: 10px;
     margin: 10px;
-    border: 0.5px solid rgb(163, 159, 159);
+    border-left: 0.5px solid rgb(163, 159, 159);
+    border-right: 0.5px solid rgb(163, 159, 159);
+}
+
+header img{
+    max-width: 20%;
+    margin: auto;
+    padding: 0px;
+    justify-content: center;
 }
 
 nav{
@@ -25,24 +33,32 @@ nav a{
     text-decoration: none;
     margin-right: 5px;
     color: black;
-    border: 0.5px solid rgb(163, 159, 159);
+    font-weight: bold;
     padding: 2px;
+    cursor: pointer;
 }
 
-section{
-
-
+nav a:hover{
+    color: rgb(163, 159, 159);
+    border-left: 0.5px solid rgb(163, 159, 159);
 }
 
 .headline{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
 
-
+.headline img{
+    width: 100%;
+    max-width: 1400px;
 }
 
 .platform{
     padding: 10px;
     margin: 10px;
-    border: 0.5px solid rgb(163, 159, 159);
 }
 
 .platform h2{
@@ -50,18 +66,34 @@ section{
 
 }
 
+
+.benefit-container img{
+    width: 20%;
+    max-width: 50px;
+    margin: auto;
+    display: block;
+}
+
 .benefit-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 .benefit-container div{
-    border: 0.5px solid rgb(163, 159, 159);
-    background-color: rgb(247, 244, 244);
-    text-align: center;
     margin: 5px;
-    padding: 25px;
-
+    padding: 10px;
+    background-color: rgb(251, 251, 251);
+    border-radius: 5px;
 }
+
+.benefit-container div h2{
+    text-align: center;
+}
+
+.benefit-container div p{
+    text-align: center;
+    color: rgb(163, 159, 159);
+}
+
 
 /*-------------------*/
 
@@ -81,12 +113,17 @@ section{
 }
 
 .stat-container div{
-    border: 0.5px solid rgb(163, 159, 159);
-    background-color: rgb(247, 244, 244);
+    background-color: rgb(251, 251, 251);
     text-align: center;
-    margin: 10px;
+    border-radius: 5px;
+    margin: 5px;
     padding: 5px;
 }
+
+.stat-container p{
+    color: rgb(163, 159, 159);
+}
+
 
 /*-------------------*/
 
@@ -106,12 +143,44 @@ section{
 }
 
 .course-container div{
-    border: 0.5px solid rgb(163, 159, 159);
-    background-color: rgb(247, 244, 244);
     text-align: center;
-    margin: 5px;
-    padding: 25px;
+    margin: 10px;
+    padding: 10px;
 }
+
+.course-container div img{
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.course-container div h2{
+    text-align: center;
+}
+
+.course-container div p{
+    text-align: center;
+    color: rgb(163, 159, 159);
+}
+
+.course-container div button{
+    background: linear-gradient(90deg, rgb(97, 165, 180) 0%, rgb(105, 216, 211) 100%, rgb(86, 178, 143) 100%);
+    color: white;
+    border: linear-gradient(90deg, rgb(97, 165, 180) 0%, rgb(105, 216, 211) 100%, rgb(86, 178, 143) 100%);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.course-container div button img{
+    width: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
 
 /*-------------------*/
 
@@ -131,7 +200,8 @@ section{
 }
 
 .testimonials-container div{
-    border: 0.5px solid rgb(163, 159, 159);
+    border-left: 3px solid purple;
+    border-radius: 5px;
     background-color: rgb(247, 244, 244);
     text-align: center;
     margin: 5px;
@@ -158,16 +228,14 @@ footer{
 }
 
 footer nav{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+
 }
+
 footer nav a{
     font-size: 19px;
     text-decoration: none;
     margin-right: 5px;
     color: black;
-    border: 0.5px solid rgb(163, 159, 159);
     padding: 2px;
-    text-align: center;
 }
 
